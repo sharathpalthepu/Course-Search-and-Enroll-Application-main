@@ -29,10 +29,10 @@ class App extends React.Component {
   }
 
   async loadInitialState() {
-    let courseURL = "http://cs571.cs.wisc.edu:53706/api/react/classes";
+    let courseURL = "https://cs571.cs.wisc.edu/api/react/classes";
     let courseData = await (await fetch(courseURL)).json();
     let compURL =
-      "http://cs571.cs.wisc.edu:53706/api/react/students/5022025924/classes/completed";
+      "https://cs571.cs.wisc.edu/api/react/students/5022025924/classes/completed";
     let compData = await (await fetch(compURL)).json();
 
     this.setState({
